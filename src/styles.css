@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.container-fluid{
+    padding: 10px 20px;
+}
+.left-box{
+    padding: 100px 80px;
+}
+.filterhead{
+    margin-top: -50px;
+    text-align: center;
+}
+.warning{
+    text-align: center;
+    margin-top: 50px;
+    color: firebrick;
+}
+.filterheading{
+    font-weight: 600;
+}

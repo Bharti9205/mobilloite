@@ -1,0 +1,40 @@
+<div class="container">
+  <!-- pagination will be visible if there are more than 3 objects to show -->
+  <div class="text-right mb-2" *ngIf="length > 3">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+  <div *ngIf="length > 0">
+    <div *ngFor="
+        let data of updatedLaptops
+          | paginate : { itemsPerPage: count, currentPage: p }
+      ">
+      <div class="card mt-2">
+        <div class="row g-0">
+          <div class="col-4">
+            <img src="{{ data.picture }}" class="h-100 card-img" alt="..." style="object-fit: cover" />
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a class="link-dark text-decoration-none" href="#" target="_blank">{{ data.name }}</a>
+              </h5>
+              <p class="card-text">
+                Description : It has {{ data.RAM }} RAM, {{ data.HDD }} HDD and
+                {{ data.SDD }} SDD. It's screen size is {{ data.ScreenSize }}
+              </p>
+              <span class="badge rounded-pill bg-dark">{{ data.OS }}</span>
+            </div>
+            <div class="card-footer text-end text-muted">
+              Price : {{ data.price }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- if no product to show -->
+<div *ngIf="length === 0" class="warning">
+  <h3>No Data Found !</h3>
+</div>

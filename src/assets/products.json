@@ -1,0 +1,245 @@
+[
+    {
+        "name": "Spectre x360",
+        "price": 221000,
+        "picture": "https://m.media-amazon.com/images/I/41sT-ej9Q-L.jpg",
+        "RAM": "8GB",
+        "SDD": "256GB",
+        "HDD": "1TB",
+        "ScreenSize": "16 inches",
+        "OS": "Windows",
+        "id":1
+    },
+    {
+        "name": "MacBook Pro",
+        "price": 801200,
+        "picture": "https://m.media-amazon.com/images/I/41sT-ej9Q-L.jpg",
+        "RAM": "16GB",
+        "SDD": "512GB",
+        "HDD": "1TB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":2
+    },
+    {
+        "name": "ThinkPad X1 Carbon",
+        "price": 41800,
+        "picture": "https://m.media-amazon.com/images/I/41sT-ej9Q-L.jpg",
+        "RAM": "8GB",
+        "SDD": "128GB",
+        "HDD": "500GB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":3
+    },
+    {
+        "name": "Surface Laptop 4",
+        "price": 441500,
+        "picture": "https://m.media-amazon.com/images/I/71p-M3sPhhL.jpg",
+        "RAM": "32GB",
+        "SDD": "1TB",
+        "HDD": "2TB",
+        "ScreenSize": "12 inches",
+        "OS": "Windows",
+        "id":4
+    },
+    {
+        "name": "ROG Zephyrus G14",
+        "price": 33900,
+        "picture": "https://m.media-amazon.com/images/I/71p-M3sPhhL.jpg",
+        "RAM": "8GB",
+        "SDD": "256GB",
+        "HDD": "1TB",
+        "ScreenSize": "16 inches",
+        "OS": "Windows",
+        "id":5
+    },
+    {
+        "name": "Dell XPS 13",
+        "price": 151100,
+        "picture": "https://m.media-amazon.com/images/I/71p-M3sPhhL.jpg",
+        "RAM": "16GB",
+        "SDD": "512GB",
+        "HDD": "1TB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":6
+    },
+    {
+        "name": "IdeaPad Gaming 3",
+        "price": 23750,
+        "picture": "https://m.media-amazon.com/images/I/71p-M3sPhhL.jpg",
+        "RAM": "8GB",
+        "SDD": "128GB",
+        "HDD": "500GB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":7
+    },
+    {
+        "name": "Pavilion 15",
+        "price": 981400,
+        "picture": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India-1200x900.jpg",
+        "RAM": "32GB",
+        "SDD": "1TB",
+        "HDD": "2TB",
+        "ScreenSize": "16 inches",
+        "OS": "Windows",
+        "id":8
+    },
+    {
+        "name": "ZenBook 14",
+        "price": 75950,
+        "picture": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India-1200x900.jpg",
+        "RAM": "8GB",
+        "SDD": "256GB",
+        "HDD": "1TB",
+        "ScreenSize": "12 inches",
+        "OS": "Windows",
+        "id":9
+    },
+    {
+        "name": "Predator Helios 300",
+        "price": 451300,
+        "picture": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India-1200x900.jpg",
+        "RAM": "16GB",
+        "SDD": "512GB",
+        "HDD": "1TB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":10
+    },
+    {
+        "name": "Inspiron 15",
+        "price": 76700,
+        "picture": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India-1200x900.jpg",
+        "RAM": "8GB",
+        "SDD": "128GB",
+        "HDD": "500GB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":11
+    },
+    {
+        "name": "Swift 3",
+        "price": 781600,
+        "picture": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India-1200x900.jpg",
+        "RAM": "32GB",
+        "SDD": "1TB",
+        "HDD": "2TB",
+        "ScreenSize": "12 inches",
+        "OS": "Windows",
+        "id":12
+    },
+    {
+        "name": "Legion 5",
+        "price": 94850,
+        "picture": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India-1200x900.jpg",
+        "RAM": "8GB",
+        "SDD": "256GB",
+        "HDD": "1TB",
+        "ScreenSize": "16 inches",
+        "OS": "Windows",
+        "id":13
+    },
+    {
+        "name": "VivoBook S15",
+        "price": 111250,
+        "picture": "https://sm.ign.com/ign_in/deal/t/the-alienw/the-alienware-m17-17-amd-ryzen-9-rtx-3070-ti-gaming-laptop-d_yyh2.jpg",
+        "RAM": "16GB",
+        "SDD": "512GB",
+        "HDD": "1TB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":14
+    },
+    {
+        "name": "MateBook D",
+        "price": 11780,
+        "picture": "https://sm.ign.com/ign_in/deal/t/the-alienw/the-alienware-m17-17-amd-ryzen-9-rtx-3070-ti-gaming-laptop-d_yyh2.jpg",
+        "RAM": "8GB",
+        "SDD": "128GB",
+        "HDD": "500GB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":15
+    },
+    {
+        "name": "Aspire 5",
+        "price": 10700,
+        "picture": "https://sm.ign.com/ign_in/deal/t/the-alienw/the-alienware-m17-17-amd-ryzen-9-rtx-3070-ti-gaming-laptop-d_yyh2.jpg",
+        "RAM": "32GB",
+        "SDD": "1TB",
+        "HDD": "2TB",
+        "ScreenSize": "12 inches",
+        "OS": "Windows",
+        "id":16
+    },
+    {
+        "name": "Yoga 9i",
+        "price": 12920,
+        "picture": "https://sm.ign.com/ign_in/deal/t/the-alienw/the-alienware-m17-17-amd-ryzen-9-rtx-3070-ti-gaming-laptop-d_yyh2.jpg",
+        "RAM": "8GB",
+        "SDD": "256GB",
+        "HDD": "1TB",
+        "ScreenSize": "16 inches",
+        "OS": "Windows",
+        "id":17
+    },
+    {
+        "name": "Chromebook 14",
+        "price": 100350,
+        "picture": "https://sm.ign.com/ign_in/deal/t/the-alienw/the-alienware-m17-17-amd-ryzen-9-rtx-3070-ti-gaming-laptop-d_yyh2.jpg",
+        "RAM": "16GB",
+        "SDD": "512GB",
+        "HDD": "1TB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":18
+    },
+    {
+        "name": "Envy 13",
+        "price": 70070,
+        "picture": "https://sm.ign.com/ign_in/deal/t/the-alienw/the-alienware-m17-17-amd-ryzen-9-rtx-3070-ti-gaming-laptop-d_yyh2.jpg",
+        "RAM": "8GB",
+        "SDD": "128GB",
+        "HDD": "500GB",
+        "ScreenSize": "12 inches",
+        "OS": "Windows",
+        "id":19
+    },
+    {
+        "name": "Laptop Air",
+        "price": 1806760,
+        "picture": "https://sm.ign.com/ign_in/deal/t/the-alienw/the-alienware-m17-17-amd-ryzen-9-rtx-3070-ti-gaming-laptop-d_yyh2.jpg",
+        "RAM": "32GB",
+        "SDD": "1TB",
+        "HDD": "2TB",
+        "ScreenSize": "14 inches",
+        "OS": "Windows",
+        "id":20
+    },
+    {
+        "name": "Laptop Air",
+        "price": 180000,
+        "picture": "https://sm.ign.com/ign_in/deal/t/the-alienw/the-alienware-m17-17-amd-ryzen-9-rtx-3070-ti-gaming-laptop-d_yyh2.jpg",
+        "RAM": "32GB",
+        "SDD": "1TB",
+        "HDD": "2TB",
+        "ScreenSize": "12 inches",
+        "OS": "Mac",
+        "id":21
+    },
+    {
+        "name": "Air",
+        "price": 1000800,
+        "picture": "https://sm.ign.com/ign_in/deal/t/the-alienw/the-alienware-m17-17-amd-ryzen-9-rtx-3070-ti-gaming-laptop-d_yyh2.jpg",
+        "RAM": "32GB",
+        "SDD": "1TB",
+        "HDD": "2TB",
+        "ScreenSize": "16 inches",
+        "OS": "Linux",
+        "id":21
+    }
+
+]
