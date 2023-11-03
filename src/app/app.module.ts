@@ -8,12 +8,14 @@ import { FilterComponent } from './filter/filter.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { FormsModule } from '@angular/forms';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoryComponent,
-    FilterComponent
+    FilterComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

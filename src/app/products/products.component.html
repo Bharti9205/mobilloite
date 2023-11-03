@@ -1,0 +1,31 @@
+<div class="container">
+   <h4>Products List: </h4>
+    <div>
+      <div *ngFor="let data of laptopsToShow">
+        <div class="card mt-2">
+          <div class="row g-0">
+            <div class="col-4">
+              <img src="{{ data.picture }}" class="h-100 card-img" alt="..." style="object-fit: cover" />
+            </div>
+            <div class="col-8">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a class="link-dark text-decoration-none" href="#" target="_blank">{{ data.name }}</a>
+                </h5>
+                <p class="card-text">
+                  Description : It has {{ data.RAM }} RAM, {{ data.HDD }} HDD and
+                  {{ data.SDD }} SDD. It's screen size is {{ data.ScreenSize }}
+                </p>
+                <span class="badge rounded-pill bg-dark">{{ data.OS }}</span>
+              </div>
+              <div class="card-footer text-end text-muted">
+                Price : {{ data.price }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary showmore" (click)=" showMore()">Show More</button>
+    </div>
+  </div>
+  

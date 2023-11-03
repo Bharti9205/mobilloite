@@ -1,67 +1,13 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col left-box">
-      <div>
-        <div class="filterhead">
-          <h4>Filter By:</h4>
-        </div>
-      </div>
-
-      <div class="form-group row mt-5">
-        <label class="col-3 col-form-label filterheading">RAM</label>
-        <div class="col-9 mt-1">
-          <div class="form-check form-check-inline" *ngFor="let data of RAM">
-            <input class="form-check-input" name="updatedRAM" type="checkbox" value=data
-              (change)="onFilterChange($event, data)">
-            <label class="form-check-label" for="">{{data}}</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row mt-2">
-        <label class="col-3 col-form-label filterheading">SDD</label>
-        <div class="col-9 mt-1">
-          <div class="form-check form-check-inline" *ngFor="let data of SDD">
-            <input class="form-check-input" name="updatedSDD" type="checkbox" value=data
-              (change)="onFilterChange($event, data)">
-            <label class="form-check-label" for="">{{data}}</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row mt-2">
-        <label class="col-3 col-form-label filterheading ">HDD</label>
-        <div class="col-9 mt-1">
-          <div class="form-check form-check-inline" *ngFor="let data of HDD">
-            <input class="form-check-input" name="updatedHDD" type="checkbox" value=data
-              (change)="onFilterChange($event, data)">
-            <label class="form-check-label" for="inlineCheckbox1">{{data}}</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row mt-2">
-        <label class="col-3 col-form-label filterheading">Screen Size</label>
-        <div class="col-9 mt-1">
-          <div class="form-check form-check-inline" *ngFor="let data of SS">
-            <input class="form-check-input" name="updatedSS" type="checkbox" value=data
-              (change)="onFilterChange($event, data)">
-            <label class="form-check-label" for="inlineCheckbox1">{{data}}</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row mt-2">
-        <label class="col-3 col-form-label filterheading">OS</label>
-        <div class="col-9 mt-1">
-          <div class="form-check form-check-inline" *ngFor="let data of OS">
-            <input class="form-check-input" name="updatedOS" type="checkbox" value=data
-              (change)="onFilterChange($event, data)">
-            <label class="form-check-label" for="inlineCheckbox1">{{data}}</label>
-          </div>
-        </div>
-      </div>
-      <button class="btn btn-secondary" (click)="findSelectedItems()">Apply</button>
+      <!-- first child -->
+     <app-filter (applyFilter)="onFilterChange($event)"></app-filter>
 
     </div>
     <div class="col">
-      <app-filter [dataFilter]="filterData"></app-filter>
+      <!-- second child -->
+      <app-products></app-products>
     </div>
   </div>
 

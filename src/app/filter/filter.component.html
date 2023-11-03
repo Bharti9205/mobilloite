@@ -1,40 +1,57 @@
-<div class="container">
-  <!-- pagination will be visible if there are more than 3 objects to show -->
-  <div class="text-right mb-2" *ngIf="length > 3">
-    <pagination-controls (pageChange)="p = $event"></pagination-controls>
-  </div>
-  <div *ngIf="length > 0">
-    <div *ngFor="
-        let data of updatedLaptops
-          | paginate : { itemsPerPage: count, currentPage: p }
-      ">
-      <div class="card mt-2">
-        <div class="row g-0">
-          <div class="col-4">
-            <img src="{{ data.picture }}" class="h-100 card-img" alt="..." style="object-fit: cover" />
-          </div>
-          <div class="col-8">
-            <div class="card-body">
-              <h5 class="card-title">
-                <a class="link-dark text-decoration-none" href="#" target="_blank">{{ data.name }}</a>
-              </h5>
-              <p class="card-text">
-                Description : It has {{ data.RAM }} RAM, {{ data.HDD }} HDD and
-                {{ data.SDD }} SDD. It's screen size is {{ data.ScreenSize }}
-              </p>
-              <span class="badge rounded-pill bg-dark">{{ data.OS }}</span>
-            </div>
-            <div class="card-footer text-end text-muted">
-              Price : {{ data.price }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div>
+  <div class="filterhead">
+    <h4>Filter By:</h4>
   </div>
 </div>
 
-<!-- if no product to show -->
-<div *ngIf="length === 0" class="warning">
-  <h3>No Data Found !</h3>
+<div class="form-group row mt-5">
+  <label class="col-3 col-form-label filterheading">RAM</label>
+  <div class="col-9 mt-1">
+    <div class="form-check form-check-inline" *ngFor="let data of RAM">
+      <input class="form-check-input" name="updatedRAM" type="checkbox" value=data
+        (change)="onFilterChange($event, data)">
+      <label class="form-check-label" for="">{{data}}</label>
+    </div>
+  </div>
 </div>
+<div class="form-group row mt-2">
+  <label class="col-3 col-form-label filterheading">SDD</label>
+  <div class="col-9 mt-1">
+    <div class="form-check form-check-inline" *ngFor="let data of SDD">
+      <input class="form-check-input" name="updatedSDD" type="checkbox" value=data
+        (change)="onFilterChange($event, data)">
+      <label class="form-check-label" for="">{{data}}</label>
+    </div>
+  </div>
+</div>
+<div class="form-group row mt-2">
+  <label class="col-3 col-form-label filterheading ">HDD</label>
+  <div class="col-9 mt-1">
+    <div class="form-check form-check-inline" *ngFor="let data of HDD">
+      <input class="form-check-input" name="updatedHDD" type="checkbox" value=data
+        (change)="onFilterChange($event, data)">
+      <label class="form-check-label" for="inlineCheckbox1">{{data}}</label>
+    </div>
+  </div>
+</div>
+<div class="form-group row mt-2">
+  <label class="col-3 col-form-label filterheading">Screen Size</label>
+  <div class="col-9 mt-1">
+    <div class="form-check form-check-inline" *ngFor="let data of SS">
+      <input class="form-check-input" name="updatedSS" type="checkbox" value=data
+        (change)="onFilterChange($event, data)">
+      <label class="form-check-label" for="inlineCheckbox1">{{data}}</label>
+    </div>
+  </div>
+</div>
+<div class="form-group row mt-2">
+  <label class="col-3 col-form-label filterheading">OS</label>
+  <div class="col-9 mt-1">
+    <div class="form-check form-check-inline" *ngFor="let data of OS">
+      <input class="form-check-input" name="updatedOS" type="checkbox" value=data
+        (change)="onFilterChange($event, data)">
+      <label class="form-check-label" for="inlineCheckbox1">{{data}}</label>
+    </div>
+  </div>
+</div>
+<button class="btn btn-secondary" (click)="findSelectedItems()">Apply</button>

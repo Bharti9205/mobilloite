@@ -1,7 +1,5 @@
-import { Component, OnInit, SimpleChanges } from '@angular/core';
-import { Input } from '@angular/core';
+import { Component, OnInit, SimpleChanges, EventEmitter, Output } from '@angular/core';
 import { MyObject } from '../laptop';
-import { DataLoadService } from '../data-load.service';
 
 
 @Component({
@@ -11,36 +9,46 @@ import { DataLoadService } from '../data-load.service';
 })
 export class FilterComponent implements OnInit {
 
-  //passing data from parent to child component.
-  @Input() dataFilter: MyObject = {};
-  allLaptops: any[] = [];
-  updatedLaptops: any[] = [];
-  p = 1;
-  count = 3;
-  length = 0;
+  @Output() applyFilter = new EventEmitter<any>();
 
-  constructor(private dataLoad: DataLoadService) { }
+  RAM = ["4GB", "8GB", "16GB", "32GB"];
+  SDD = ["128GB", "256GB", "512GB"];
+  HDD = ["256GB", "500GB", "1TB", "2TB"];
+  SS = ["12 inches", "14 inches", "16 inches"];
+  OS = ["Windows", "Mac", "Linux"];
 
-  ngOnInit(): void {
-    //calling the service to load all the data in product.json
-    this.dataLoad.getAllProducts().subscribe((data: any) => {
-      this.allLaptops = data;
-      this.updatedLaptops = data;
-      this.length = this.updatedLaptops.length;
-    });
+
+  filterData: MyObject = {
+    "updatedRAM": [],
+    "updatedSDD": [],
+    "updatedHDD": [],
+    "updatedSS": [],
+    "updatedOS": []
 
   }
 
-  filterUpdate() {
-    //filtering all data based on checked details in parent component
-    this.updatedLaptops = this.allLaptops.filter((x) => {
-      return   this.dataFilter["updatedRAM"].includes(x.RAM) 
-            || this.dataFilter["updatedSDD"].includes(x.SDD)
-            || this.dataFilter["updatedHDD"].includes(x.HDD)
-            || this.dataFilter["updatedOS"].includes(x.OS)
-            || this.dataFilter["updatedSS"].includes(x.ScreenSize);
-    });
-    this.length = this.updatedLaptops.length;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+  onFilterChange(event: Event, value: string) {
+    const a = (<HTMLInputElement>event.target).name;
+    if ((<HTMLInputElement>event.target).checked) {
+      //adding the checked data on click
+      if (value) {
+        this.filterData[a].push(value);
+      }
+    } else {
+      //removing data on un-click event
+      this.filterData[a] = this.filterData[a].filter(val => val !== value)
+    }
+  }
+
+  findSelectedItems() {
+    //communicating with parent
+    this.applyFilter.emit(this.filterData);
   }
 
 }
